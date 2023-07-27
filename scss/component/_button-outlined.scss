@@ -1,0 +1,25 @@
+@use '../globals/' as global;
+
+@mixin button-outlined{
+    background-color: global.$neutral-10;
+    border-radius: 6px;
+    border: 1px solid global.$neutral-40;
+    box-shadow: global.$shadow-1;
+    padding: 8px 16px;
+    text-decoration: none;
+    color: global.$neutral-100;
+    font-size: global.$text-m;
+    font-weight: 500;
+    &:hover{
+        background-color: global.$neutral-20;
+    }
+    &:focus{
+        outline: 3px solid global.$primary-focus;
+        border: 1px solid global.$primary-main;
+        background-color: global.$neutral-30;
+    }
+
+    &:active {
+        background-color: global.$neutral-10;
+    }
+}

@@ -1,0 +1,22 @@
+@use '../globals/' as global;
+
+@mixin button-primary{
+    background-color: global.$primary-main;
+    border-radius: 6px;
+    box-shadow: global.$shadow-1;
+    padding: 8px 16px;
+    text-decoration: none;
+    color: global.$neutral-10;
+    font-size: global.$text-m;
+    font-weight: 500;
+    &:hover{
+        background-color: global.$primary-hover;
+    }
+    &:focus{
+        outline: 3px solid global.$primary-focus;
+    }
+
+    &:active {
+        background-color: global.$primary-pressed;
+    }
+}

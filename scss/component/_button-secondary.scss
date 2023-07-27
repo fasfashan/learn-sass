@@ -1,0 +1,17 @@
+@use '../globals/' as global;
+
+@mixin button-secondary{
+    background-color: global.$primary-surface;
+    border-radius: 6px;
+    box-shadow: global.$shadow-1;
+    padding: 8px 16px;
+    text-decoration: none;
+    color: global.$primary-main;
+    font-size: global.$text-m;
+    font-weight: 500;
+   &:focus{
+        outline: 3px solid global.$primary-focus;
+        background-color: global.$neutral-30;
+    }
+   
+}

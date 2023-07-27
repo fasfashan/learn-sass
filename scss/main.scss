@@ -1,11 +1,26 @@
 @use 'globals';
-
+@use 'component';
 p {
     color: globals.$danger-main;
     font-size: globals.$text-l;
     padding: 20px;
     border: 1px red solid;
     box-shadow: globals.$shadow-1;
-    background-color: salmon;
+    background-color: globals.$primary-main;
     margin: 100px;
+}
+.button__primary {
+    @include component.button-primary();
+}
+.button__disabled {
+    @include component.button-disabled();
+}
+.button__danger {
+    @include component.button-danger();
+}
+.button__outlined {
+    @include component.button-outlined();
+}
+.button__secondary {
+    @include component.button-secondary();
 }

@@ -1,0 +1,14 @@
+@use '../globals/' as global;
+
+@mixin button-disabled{
+    background-color: global.$neutral-30;
+    border: 1px solid global.$neutral-50;
+    border-radius: 6px;
+    box-shadow: global.$shadow-1;
+    padding: 8px 16px;
+    text-decoration: none;
+    color: global.$neutral-60;
+    font-size: global.$text-m;
+    font-weight: 500;
+    cursor: not-allowed;
+}
