@@ -1,0 +1,11 @@
+@use 'globals';
+
+p {
+    color: globals.$danger-main;
+    font-size: globals.$text-l;
+    padding: 20px;
+    border: 1px red solid;
+    box-shadow: globals.$shadow-1;
+    background-color: salmon;
+    margin: 100px;
+}
